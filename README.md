@@ -1,5 +1,5 @@
-# CIS124-Course-Project
+# CIS124 COURSE PROJECT
+- Student Name: RYAN AKERS
+- Date: 11/17/2020
 
-Ryan Akers
 
-11/17/2020
