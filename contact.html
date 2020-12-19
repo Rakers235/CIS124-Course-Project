@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <title>Contact - xnor.dev</title>
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/form.js" defer></script>
 
     <!-- FONT IMPORTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,17 +38,43 @@
         <div class="mainTextBody">
             <div>
                 <h2>Getting in touch</h2>
-                <p>I am generaly aviable from 2PM to 10PM EST. Dont worry, I read all my emails and messages. <i class="fas fa-thumbs-up"></i></p>
-            </div>
-            <div>
-                <ul>
-                    <li>Email
-                        <ul>
-                            <li>Rakers235@students.ccsnh.edu</li>
-                            <li>RyanAkers@xnor.dev</li>
-                        </ul>
-                    </li>
-                </ul>
+                <form action="https://greatbay.cc" method="post">
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" minlength="1" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="emailAddr">Email</label>
+                        <input type="email" id="emailAddr" name="emailAddr" required>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number (###) ###-####</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"> <!-- grep that number -->
+                    </div>
+                    <div>
+                        <label for="birthday">Birthday</label>
+                        <input type="date" id="birthday" name="birthday" required>
+                    </div>
+                    <div>
+                        <label for="comque">Comments or questions</label>
+                        <textarea id="comque" name="comque" rows="10" cols="30" required></textarea>
+                    </div>
+                    <div>
+                        <label for="passwd1">Password</label>
+                        <input type="password" id="passwd1" name="passwd1" required>
+                    </div>
+                    <div>
+                        <label for="passwd2">Confirm Password</label>
+                        <input type="password" id="passwd2" name="passwd2" required>
+                    </div>
+
+                    <div id="formErrors"></div>
+
+                    <div>
+                        <input type="submit" id="submit" value="Send">
+                    </div>
+
+                </form>
             </div>
         </div>
     </main>
@@ -64,4 +91,6 @@
 
     </footer>
 
-</body></html>
+</body>
+
+</html>

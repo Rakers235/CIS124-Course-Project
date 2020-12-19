@@ -87,6 +87,27 @@ header {
     bottom: 0;
 }
 
+#formErrors {
+    color: red;
+    font-weight: bold;
+}
+
+form > div {
+    margin-bottom: 0.25em;
+}
+
+label {
+    display: block;
+}
+
+input:focus {
+    background: lightblue;
+}
+
+input.error {
+    border: 2px solid red;
+}
+
 /*     flex-direction: column; */
 @media only screen and (max-width: 1200px) {
 
